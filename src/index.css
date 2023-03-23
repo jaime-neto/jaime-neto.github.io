@@ -4,6 +4,34 @@ body {
   padding: 2rem;
 }
 
-p{
-  text-align: center;
+#direitos{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.submenu{
+  position: absolute;
+  top: 2;
+  right: 10%; 
+}
+
+button{
+  margin: 0 15px;
+}
+
+.espaco{
+  padding-left: 50px;
+}
+
+.welcome{
+  position: absolute;
+  right: 40%;
+  bottom: 60%;
+}
+
+.redes{
+  position: absolute;
+  right: 93%;
+  bottom: 10%;
 }
