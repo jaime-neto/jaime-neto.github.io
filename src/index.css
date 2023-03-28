@@ -35,3 +35,11 @@ button{
   right: 93%;
   bottom: 10%;
 }
+
+#home, #github, #about, #contact{
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 5px;
+  border-color: rgb(0, 0, 0);
+  font-size: 16px;
+}
