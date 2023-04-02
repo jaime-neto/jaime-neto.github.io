@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 import Footer from './complements/Footer';
 import NavigationMenu from './complements/NavigationMenu';
@@ -9,9 +10,11 @@ function App() {
   return(
     
       <div className="App">
-        <NavigationMenu/>
-        <AppRouter/>
-        <Footer/>
+        <BrowserRouter>
+          <NavigationMenu/>
+          <AppRouter/>  
+          <Footer/>
+        </BrowserRouter>
       </div>
   
   )
