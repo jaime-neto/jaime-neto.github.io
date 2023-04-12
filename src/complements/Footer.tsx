@@ -28,19 +28,19 @@ const Footer = ()=>{
             </div>
 
             <div className="redes">
-                <button onClick={event => abrirURL("facebook")} id="face" type="button">
+                <button onClick={event => abrirURL("facebook")} className="item-footer" type="button">
                     <ImFacebook/>
                 </button>
                 
                 <p></p>
                 
-                <button onClick={event => abrirURL("git")} id="git" type="button">
+                <button onClick={event => abrirURL("git")} className="item-footer" type="button">
                     <AiFillGithub/>
                 </button>
         
                 <p></p>
 
-                <button onClick={event => abrirURL("instagram")} id="inst" type="button">
+                <button onClick={event => abrirURL("instagram")} className="item-footer" type="button">
                     <BsInstagram/>
                 </button>
 

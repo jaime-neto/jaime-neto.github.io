@@ -1,24 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const NavigationMenu = ()=>{
+const urlGit = "https://github.com/jaime-neto";
+const openGitHub = () => {
+    window.open(urlGit, '_blank');
+};
 
-    var url = "https://github.com/jaime-neto";
+const itemsMenu = [{
+    text: '1.Home',
+    path: '/'
+},
+{
+    text: '2.About',
+    path: '/about'
+},
+{
+    text: '3.Contact',
+    path: '/contact'
+}];
 
-    function openGitHub(){
-        window.open(url, '_blank');
-    }
-
+const NavigationMenu = () => {
+    const [ itemActive, setItemActive ] = useState<number>(0);
     return(
         <div>
             <div className="submenu">
-                <Link to="/"><input type="button" id="home" value="Home"/></Link>
-                <span className="espaco"></span>
-                <input onClick={openGitHub} type="button" id="github" value="GitHub"/>
-                <span className="espaco"></span>
-                <Link to="/about"><input type="button" id="about" value="About"/></Link>
-                <span className="espaco"></span>
-                <Link to="/contact"><input type="button" id="contact" value="Contact"/> </Link>
+                {
+                    itemsMenu.map((it, idx) => (<Link to={it.path}>
+                                                    <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />
+                                                </Link>))
+                }
+                <input onClick={openGitHub} type="button" className="item-menu" value="4.GitHub"/>
             </div>
         </div>
     );

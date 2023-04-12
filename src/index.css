@@ -14,14 +14,11 @@ body {
   position: absolute;
   top: 2;
   right: 10%; 
+  width: 50%;
 }
 
 button{
   margin: 0 15px;
-}
-
-.espaco{
-  padding-left: 50px;
 }
 
 .welcome{
@@ -36,17 +33,37 @@ button{
   bottom: 10%;
 }
 
-#home, #github, #about, #contact{
+.item-menu{
   background: rgb(0, 0, 0);
   color: white;
   border: 5px;
   border-color: rgb(0, 0, 0);
   font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 25px;
 }
 
-#face, #git, #inst{
+.item-menu-active{
+  background: rgb(0, 0, 0);
+  color: rgb(28, 28, 29);
+  border: 5px;
+  border-color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-left: 25px;
+}
+
+.item-menu:hover {
+  color: rgb(28, 28, 29);
+}
+
+.item-footer{
   background: black;
   color: white;
   border: 5px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.item-footer:hover{
+  color: rgb(28, 28, 29);
 }
