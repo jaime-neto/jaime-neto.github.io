@@ -7,15 +7,15 @@ const openGitHub = () => {
 };
 
 const itemsMenu = [{
-    text: '1.Home',
+    text: 'Home',
     path: '/'
 },
 {
-    text: '2.About',
+    text: 'About',
     path: '/about'
 },
 {
-    text: '3.Contact',
+    text: 'Contact',
     path: '/contact'
 }];
 
@@ -29,7 +29,7 @@ const NavigationMenu = () => {
                                                     <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />
                                                 </Link>))
                 }
-                <input onClick={openGitHub} type="button" className="item-menu" value="4.GitHub"/>
+                <input onClick={openGitHub} type="button" className="item-menu" value="GitHub"/>
             </div>
         </div>
     );

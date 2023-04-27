@@ -25,9 +25,9 @@ const Footer = ()=>{
 
     return(
         <div>
-            <div className="direitos">
-                <p id="direitos">
-                &copy; 2023 Jaime Neto
+            <div className="emailFooter">
+                <p>
+                    <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>
                 </p>
             </div>
 
@@ -54,7 +54,9 @@ const Footer = ()=>{
                     <FiLinkedin/>
                 </button>
                 
-                <div id="riscoFooter"></div>
+                <p></p>
+
+                <div id="riscoItensFooter"></div>
 
             </div>
         </div>
