@@ -1,5 +1,5 @@
 import React from "react";
-import perfil from "../img/perfil.png";
+import perfil from "../img/perfil.jpeg";
 
 const About = ()=>{
     return(
@@ -7,28 +7,44 @@ const About = ()=>{
             <div className="about">
                 <h1>About me</h1>
                 
-                <p>Olá, meu nome é Jaime, moro em Serrinha dos Pintos-RN. Sou um cara que gosta de dar soluções para problemas de uma forma geral, 
-                    principalmente quando esses tipos de problemas podem ser resolvidos na forma de desenvolvimento. Apesar de cair de paraquedas 
-                    nesta área, através do curso de TI (Tecnologia da Informação), meu interesse e familiaridade neste ramo foi crescendo 
-                    a cada período que se passava.
+                <p>
+                    Olá, meu nome é Jaime e sou formado em Bacharelado em Tecnologia da Informação. Moro em Serrinha dos Pintos-RN e tenho habilidade em 
+                    encontrar soluções para diversos tipos de problemas, especialmente quando envolvem programação. Embora tenha começado na área por acaso,
+                    durante o curso de TI, fui me interessando cada vez mais e me tornando familiarizado com as tecnologias e ferramentas utilizadas na área.
+                    Estou sempre em busca de aprendizado e aprimoramento para me tornar um profissional competente e atualizado.
                 </p>
 
                 <p>
-                    Comecei o curso de TI em 2016, ofertado pela UFERSA (Universidade Federal Rural do Semi-árido), com 21 anos de idade. Antes disso,
-                    já trabalhava como técnico em Telecomunicações, com as tecnologias rádio e fibra óptica, emprego a qual estou atualmente.
-                    Conclui o curso de bacharel em TI no ano de 2019. Durante o período do curso, aprendi muitas tecnologias e melhorei bastante a forma
-                    como lidava com problemas do dia a dia. O curso era com enfâse em Engenharia de Software, paguei algumas cadeiras e além de aprender
-                    algumas linguagens de programação e ferramentas, também aprendi bastante sobre metodologias ágeis para desenvolvimento.
+                    Ingressei no curso de bacharelado em Tecnologia da Informação em 2016. Durante toda a minha jornada acadêmica, adquiri conhecimentos em 
+                    diversas tecnologias e aprimorei minha habilidade em lidar com problemas do cotidiano. A visão proporcionada pelo curso ampliou minha 
+                    perspectiva de mundo e me preparou para atuar no mercado de trabalho. A grade curricular tinha ênfase em Engenharia de Software, o que me 
+                    levou a cursar disciplinas como metodologias ágeis, análise de requisitos, qualidade e teste de software, consolidando minha formação nesta 
+                    área.
+                </p>
+                    
+                <p>
+                    Trabalho como Técnico de Telecomunicações desde 2016, desempenhando atividades como instalação e manutenção de equipamentos de rádio e 
+                    fibra óptica. Ao longo da minha trajetória profissional, desenvolvi habilidades em comunicação interpessoal, liderança de equipes e gestão
+                    de situações sob pressão."
                 </p>
 
                 <p>
-                    Atualmente, estou buscando atuar na área na qual sou formado, como desenvolvedor back-end. Ainda na faculdade, aprendi e usei em projetos
-                    as seguintes tecnologias: C, C++, Java, Javascript, html, css e banco de dados. Nos dias mais atuais, estudei um pouco de Node.js e atualmente
-                    tenho utilizado para estudos e projetos pessoais as seguintes tecnologias: Github, Javascript, Typescript, React, html e css.
+                    No momento, busco uma oportunidade para atuar como desenvolvedor de software, área na qual sou formado. A seguir, compartilho algumas das 
+                    tecnologias com as quais tenho experiência e que tenho utilizado em projetos pessoais recentes:
+                    
+                    <div className="tecnologias">
+                        <pre>&gt; C/C++        &gt; JavaScript</pre>
+                        <pre>&gt; Java         &gt; PostgreSQL</pre>
+                        <pre>&gt; Git          &gt; Node.js</pre>
+                        <pre>&gt; Typescript   &gt; React</pre>
+                        <pre>&gt; HTML         &gt; CSS</pre>
+                    </div>
+                    
+
                 </p>
             
                 <div className="perfil">   
-                    <img src={perfil} alt="perfil" width="250" height="250" />"
+                    <img id="foto-perfil" src={perfil} alt="perfil" width="250" height="250" />
                 </div>
 
             </div>  

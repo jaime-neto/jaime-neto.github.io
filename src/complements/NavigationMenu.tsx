@@ -29,7 +29,7 @@ const NavigationMenu = () => {
                                                     <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />
                                                 </Link>))
                 }
-                <input onClick={openGitHub} type="button" className="item-menu" value="GitHub"/>
+                <input onClick={openGitHub} type="button" id="menu-github" className="item-menu" value="GitHub"/>
             </div>
         </div>
     );
