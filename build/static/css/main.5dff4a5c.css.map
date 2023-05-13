@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.5dff4a5c.css","mappings":"AAAA,KACE,qBAA8B,CAC9B,aAAgB,CAChB,YACF,CAEA,EACE,iBACF","sources":["index.css"],"sourcesContent":["body {\n  background-color: rgb(0, 0, 0);\n  color: aliceblue;\n  padding: 2rem;\n}\n\np{\n  text-align: center;\n}\n"],"names":[],"sourceRoot":""}
