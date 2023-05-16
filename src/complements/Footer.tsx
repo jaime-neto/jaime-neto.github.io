@@ -1,8 +1,10 @@
 import React from "react";
-import {ImFacebook} from "react-icons/im";
-import {AiFillGithub} from "react-icons/ai";
-import {BsInstagram} from "react-icons/bs";
-import {FiLinkedin} from "react-icons/fi";
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const Footer = ()=>{
 
@@ -24,6 +26,48 @@ const Footer = ()=>{
     }
 
     return(
+        <Grid container spacing={2} sx={{ marginTop: "2%" }}>
+            <Grid item xs={1}>
+                
+                <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>                
+                <Typography></Typography>
+                <GitHubIcon onClick={event => abrirURL("git")} className="item-footer" fontSize="medium"/>
+                <Typography></Typography>
+                <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer" fontSize="medium"/>
+                <Typography></Typography>
+                <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer" fontSize="medium"/>
+    
+            </Grid>
+
+            <Grid item xs={9}></Grid>
+            
+            <Grid item xs={2}>
+                <Typography>
+                    <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>  
+                </Typography>    
+            </Grid>
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*
         <div>
             <div className="emailFooter">
                 <p>
@@ -59,7 +103,7 @@ const Footer = ()=>{
                 <div id="riscoItensFooter"></div>
 
             </div>
-        </div>
+        </div>*/
     );
 
 };

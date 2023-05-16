@@ -1,8 +1,10 @@
+import Grid from "@mui/material/Grid";
+import Typography from "@mui/material/Typography";
 import React from "react";
-import { AiFillGithub } from "react-icons/ai";
-import { BsInstagram } from "react-icons/bs";
-import { FiLinkedin } from "react-icons/fi";
-import { ImFacebook } from "react-icons/im";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const urlGit = "https://github.com/jaime-neto";
     const urlFacebook = "https://www.facebook.com/jaime.neto.75";
@@ -23,48 +25,31 @@ const urlGit = "https://github.com/jaime-neto";
 
 const Contact = ()=>{
     return(
-        <div>
-            <div className="subMenuContact">
-                <h1>Contact</h1>
+        <Grid container spacing={1}>
+            <Grid item xs={3}> </Grid>
+            <Grid item xs={5} sx={{ marginTop: "10%" }}>
+                
+                <Typography variant="h2">
+                    Contact
+                </Typography>
 
-                <p>
+                <Typography variant="body1" align="justify">
                     Obrigado por ler até aqui. Estou em busca de minha primeira oportunidade como desenvolvedor e, caso queira entrar em contato comigo, 
                     disponibilizo abaixo todas as minhas redes sociais. Além disso, sinta-se à vontade para fazer perguntas ou simplesmente dizer olá.
-                </p>
+                </Typography>
 
-                <div className="botaoOla">
-                    <a id="ola" href="mailto:jaimeneto99@gmail.com">Diga olá</a>
-                </div>
-
-                <p></p>
+                    <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>
                 
-                <div className="redes-contact">
-                <button onClick={event => abrirURL("facebook")} className="item-footer" type="button">
-                    <ImFacebook/>
-                </button>
-                
-                <button onClick={event => abrirURL("git")} className="item-footer" type="button">
-                    <AiFillGithub/>
-                </button>
+                    <GitHubIcon onClick={event => abrirURL("git")} className="item-footer" fontSize="medium"/>
 
-                <button onClick={event => abrirURL("instagram")} className="item-footer" type="button">
-                    <BsInstagram/>
-                </button>
-
-                <button onClick={event => abrirURL("linkedin")} className="item-footer" type="button">
-                    <FiLinkedin/>
-                </button>
-
-            </div>
-
-            </div>
-
-            <div className="direitos">
-                <p> Copyright &copy; 2023 Jaime Neto</p>
-                <p>Designed & Built by Jaime Neto</p>
-            </div>
+                    <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer" fontSize="medium"/>
             
-        </div>
+                    <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer" fontSize="medium"/>
+               
+                    <Typography> Copyright &copy; 2023 Jaime Neto </Typography>
+                    <Typography> Designed & Built by Jaime Neto </Typography>
+            </Grid>
+        </Grid>
     );
 };
 

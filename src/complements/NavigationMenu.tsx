@@ -1,3 +1,4 @@
+import Grid from "@mui/material/Grid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -22,16 +23,17 @@ const itemsMenu = [{
 const NavigationMenu = () => {
     const [ itemActive, setItemActive ] = useState<number>(0);
     return(
-        <div>
-            <div className="submenu">
+        <Grid container spacing={2}>
+            <Grid item xs={6}> </Grid>
+            <Grid  item xs={6} sx={{ marginTop: "0%" }}>
                 {
                     itemsMenu.map((it, idx) => (<Link to={it.path}>
                                                     <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />
                                                 </Link>))
                 }
-                <input onClick={openGitHub} type="button" id="menu-github" className="item-menu" value="GitHub"/>
-            </div>
-        </div>
+                <input className="item-menu" onClick={openGitHub} type="button" value="GitHub"/>
+            </Grid>
+        </Grid>
     );
 };
 
