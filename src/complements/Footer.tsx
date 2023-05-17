@@ -26,7 +26,7 @@ const Footer = ()=>{
     }
 
     return(
-        <Grid container spacing={2} sx={{ marginTop: "2%" }}>
+        <Grid id="footer" container spacing={2}>
             <Grid item xs={1}>
                 
                 <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>                

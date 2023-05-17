@@ -45,7 +45,7 @@ const Contact = ()=>{
                     <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer" fontSize="medium"/>
             
                     <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer" fontSize="medium"/>
-               
+
                     <Typography> Copyright &copy; 2023 Jaime Neto </Typography>
                     <Typography> Designed & Built by Jaime Neto </Typography>
             </Grid>

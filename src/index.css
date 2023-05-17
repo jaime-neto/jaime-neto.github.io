@@ -105,3 +105,11 @@ button{
   letter-spacing: 2px;
   bottom: 10px;
 }
+
+#footer{
+  top: 85%;
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 2.5rem;
+}
