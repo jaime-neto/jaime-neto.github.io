@@ -24,8 +24,8 @@ const NavigationMenu = () => {
     const [ itemActive, setItemActive ] = useState<number>(0);
     return(
         <Grid container spacing={2}>
-            <Grid item xs={6}> </Grid>
-            <Grid  item xs={6} sx={{ marginTop: "0%" }}>
+            <Grid item xs={7}> </Grid>
+            <Grid  item xs={5} sx={{ marginTop: "0%" }}>
                 {
                     itemsMenu.map((it, idx) => (<Link to={it.path}>
                                                     <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />

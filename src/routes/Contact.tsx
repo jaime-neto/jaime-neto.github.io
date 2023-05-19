@@ -26,9 +26,9 @@ const urlGit = "https://github.com/jaime-neto";
 const Contact = ()=>{
     return(
         <Grid container spacing={1}>
-            <Grid item xs={3}> </Grid>
-            <Grid item xs={5} sx={{ marginTop: "10%" }}>
-                
+            <Grid item xs={4}> </Grid>
+            <Grid item xs={4} sx={{ marginTop: "10%" }}>
+    
                 <Typography variant="h2">
                     Contact
                 </Typography>
@@ -38,17 +38,28 @@ const Contact = ()=>{
                     disponibilizo abaixo todas as minhas redes sociais. Além disso, sinta-se à vontade para fazer perguntas ou simplesmente dizer olá.
                 </Typography>
 
-                    <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>
+                    <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer-contact" fontSize="large"/>
                 
-                    <GitHubIcon onClick={event => abrirURL("git")} className="item-footer" fontSize="medium"/>
+                    <GitHubIcon onClick={event => abrirURL("git")} className="item-footer-contact" fontSize="large"/>
 
-                    <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer" fontSize="medium"/>
+                    <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer-contact" fontSize="large"/>
             
-                    <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer" fontSize="medium"/>
+                    <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer-contact" fontSize="large"/>
+                    
+            </Grid>
+            <Grid item xs={4}> </Grid>
 
+            <Grid container spacing={1}>
+                <Grid item xs={5}> </Grid>
+                
+                <Grid item xs={2} sx={{ marginTop: "20%" }}>
                     <Typography> Copyright &copy; 2023 Jaime Neto </Typography>
                     <Typography> Designed & Built by Jaime Neto </Typography>
+                </Grid>
+
+                <Grid item xs={5}> </Grid>        
             </Grid>
+            
         </Grid>
     );
 };

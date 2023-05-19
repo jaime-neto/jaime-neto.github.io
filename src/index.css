@@ -17,6 +17,9 @@ body {
   padding: 2rem;
 }
 
+pre{
+  color: #DEFF82;
+}
 
 .submenu{
   position: absolute;
@@ -47,8 +50,20 @@ button{
   color: rgba(77, 75, 75);
 }
 
+.item-footer{
+  padding: 15px;
+}
+
 .item-footer:hover{
-  color: rgba(77, 75, 75);
+  color: #DEFF82;
+}
+
+.item-footer-contact{
+  padding: 45px;
+}
+
+.item-footer-contact:hover{
+  color: #DEFF82;
 }
 
 #email{
@@ -58,7 +73,7 @@ button{
 }
 
 #email:hover{
-  color: rgba(77, 75, 75);
+  color: #DEFF82;
 }
 
 .direitos{
@@ -107,7 +122,7 @@ button{
 }
 
 #footer{
-  top: 85%;
+  top: 75%;
   position: absolute;
   bottom: 0;
   width: 95%;

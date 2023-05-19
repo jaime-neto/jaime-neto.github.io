@@ -41,7 +41,7 @@ const Footer = ()=>{
 
             <Grid item xs={9}></Grid>
             
-            <Grid item xs={2}>
+            <Grid item xs={2} sx={{ marginTop: "10%" }}>
                 <Typography>
                     <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>  
                 </Typography>    
