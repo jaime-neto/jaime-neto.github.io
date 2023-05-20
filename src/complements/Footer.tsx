@@ -27,7 +27,7 @@ const Footer = ()=>{
 
     return(
         <Grid id="footer" container spacing={2}>
-            <Grid item xs={1}>
+            <Grid item md={1} xs={12}>
                 
                 <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>                
                 <Typography></Typography>
@@ -39,9 +39,9 @@ const Footer = ()=>{
     
             </Grid>
 
-            <Grid item xs={9}></Grid>
+            <Grid item md={9} xs={12}></Grid>
             
-            <Grid item xs={2} sx={{ marginTop: "10%" }}>
+            <Grid item md={2} xs={12} sx={{ marginTop: "10%" }}>
                 <Typography>
                     <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>  
                 </Typography>    

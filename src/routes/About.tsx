@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 const About = ()=>{
     return(
         <Grid container spacing={2}>
-            <Grid item xs={3}> </Grid>
-            <Grid className="about" item xs={4} sx={{ marginTop: "5%" }}>
+            <Grid item md={3} xs={12}> </Grid>
+            <Grid className="about" item md={4} xs={12} sx={{ marginTop: "5%" }}>
                 
                 <Typography variant="h2">
                     About me
@@ -41,11 +41,11 @@ const About = ()=>{
                     
             </Grid>
             
-            <Grid item xs={4} sx={{ marginTop: "15%" }}>
+            <Grid item md={4} xs={12} sx={{ marginTop: "15%" }}>
                 <img id="perfil" src={perfil} alt="perfil" width="250" height="250"/>
             </Grid>
 
-            <Grid item xs={1}> </Grid>
+            <Grid item md={1} xs={12}> </Grid>
         </Grid>
     );
 };

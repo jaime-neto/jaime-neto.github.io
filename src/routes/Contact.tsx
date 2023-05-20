@@ -26,8 +26,8 @@ const urlGit = "https://github.com/jaime-neto";
 const Contact = ()=>{
     return(
         <Grid container spacing={1}>
-            <Grid item xs={4}> </Grid>
-            <Grid item xs={4} sx={{ marginTop: "10%" }}>
+            <Grid item md={4} xs={12}> </Grid>
+            <Grid item md={4} xs={12} sx={{ marginTop: "10%" }}>
     
                 <Typography variant="h2">
                     Contact
@@ -47,17 +47,17 @@ const Contact = ()=>{
                     <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer-contact" fontSize="large"/>
                     
             </Grid>
-            <Grid item xs={4}> </Grid>
+            <Grid item md={4} xs={12}> </Grid>
 
             <Grid container spacing={1}>
-                <Grid item xs={5}> </Grid>
+                <Grid item md={5} xs={12}> </Grid>
                 
-                <Grid item xs={2} sx={{ marginTop: "20%" }}>
+                <Grid item md={2} xs={12} sx={{ marginTop: "20%" }}>
                     <Typography> Copyright &copy; 2023 Jaime Neto </Typography>
                     <Typography> Designed & Built by Jaime Neto </Typography>
                 </Grid>
 
-                <Grid item xs={5}> </Grid>        
+                <Grid item md={5} xs={12}> </Grid>        
             </Grid>
             
         </Grid>
