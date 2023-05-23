@@ -9,7 +9,7 @@ const openGitHub = () => {
 
 const itemsMenu = [{
     text: 'Home',
-    path: '/'
+    path: '/portfolio'
 },
 {
     text: 'About',
