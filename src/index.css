@@ -66,6 +66,18 @@ button{
   color: #DEFF82;
 }
 
+#texto-ola{
+    color: #DEFF82;
+    text-decoration-line: none;
+}
+
+#botao-ola{
+  background-color:  #0F0F10;
+  border-color: #DEFF82;
+  border-radius: 5px;
+  border:solid 1px;
+}
+
 #email{
   letter-spacing: 6px;
   color: white;
@@ -119,11 +131,4 @@ button{
 .tecnologias{
   letter-spacing: 2px;
   bottom: 10px;
-}
-
-#footer{
-  top: 75%;
-  bottom: 0;
-  width: 95%;
-  height: 2.5rem;
 }

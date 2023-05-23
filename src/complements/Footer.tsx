@@ -1,6 +1,5 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -26,86 +25,24 @@ const Footer = ()=>{
     }
 
     return(
-        <Grid id="footer" container spacing={2}>
-            <Grid item md={1} xs={12}>
-                
+        <Grid id="footer" container spacing={1} alignItems={'center'} alignContent={'center'} justifyContent={'center'}>
+            <Grid item md={12} xs={3}>
                 <FacebookIcon onClick={event => abrirURL("facebook")} className="item-footer" fontSize="medium"/>                
-                <Typography></Typography>
+            </Grid>
+                            
+            <Grid item md={12} xs={3}>    
                 <GitHubIcon onClick={event => abrirURL("git")} className="item-footer" fontSize="medium"/>
-                <Typography></Typography>
+            </Grid>                
+
+            <Grid item md={12} xs={3}>    
                 <InstagramIcon onClick={event => abrirURL("instagram")} className="item-footer" fontSize="medium"/>
-                <Typography></Typography>
+            </Grid>
+                    
+            <Grid item md={12} xs={3}> 
                 <LinkedInIcon onClick={event => abrirURL("linkedin")} className="item-footer" fontSize="medium"/>
-    
-            </Grid>
-
-            <Grid item md={9} xs={12}></Grid>
-            
-            <Grid item md={2} xs={12} sx={{ marginTop: "10%" }}>
-                <Typography>
-                    <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>  
-                </Typography>    
-            </Grid>
-
+            </Grid>    
         </Grid>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /*
-        <div>
-            <div className="emailFooter">
-                <p>
-                    <a id="email" href="mailto:jaimeneto99@gmail.com">jaimeneto99@gmail.com</a>
-                </p>
-            </div>
-
-            <div className="redes">
-                <button onClick={event => abrirURL("facebook")} className="item-footer" type="button">
-                    <ImFacebook/>
-                </button>
-                
-                <p></p>
-                
-                <button onClick={event => abrirURL("git")} className="item-footer" type="button">
-                    <AiFillGithub/>
-                </button>
-        
-                <p></p>
-
-                <button onClick={event => abrirURL("instagram")} className="item-footer" type="button">
-                    <BsInstagram/>
-                </button>
-
-                <p></p>
-
-                <button onClick={event => abrirURL("linkedin")} className="item-footer" type="button">
-                    <FiLinkedin/>
-                </button>
-                
-                <p></p>
-
-                <div id="riscoItensFooter"></div>
-
-            </div>
-        </div>*/
     );
-
 };
 
 export default Footer;

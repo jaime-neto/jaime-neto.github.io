@@ -12,7 +12,7 @@ const HomePage = ()=>{
                     Olá! <Typography variant="h2" color="yellow">Me chamo Jaime Neto</Typography> 
                 </Typography>
 
-                <Typography variant="body1" align="justify">
+                <Typography variant="h6" align="justify">
                     Sou bacharel em Tecnologia da Informação pela UFERSA e estou em busca de oportunidades para iniciar minha carreira como desenvolvedor. 
                     Neste espaço, gostaria de compartilhar um pouco sobre minha formação e as tecnologias com as quais tenho experiência.
                 </Typography>
