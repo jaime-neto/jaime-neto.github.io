@@ -10,11 +10,11 @@ import HomePage from "./routes/HomePage";
 
 const router = createBrowserRouter([
     {
-        path: "/portfolio",
+        path: "/",
         element: <App/>,
         children:[
             {
-                path: "/portfolio",
+                path: "/",
                 element: <HomePage/>,
             },
         ],
