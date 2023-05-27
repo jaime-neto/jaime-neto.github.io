@@ -1,6 +1,7 @@
 import Grid from "@mui/material/Grid";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Button from '@mui/material/Button';
 
 const urlGit = "https://github.com/jaime-neto";
 const openGitHub = () => {
@@ -28,10 +29,14 @@ const NavigationMenu = () => {
             <Grid  item md={5} xs={12} sx={{ marginTop: "0%" }}>
                 {
                     itemsMenu.map((it, idx) => (<Link to={it.path}>
-                                                    <input onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} value={it.text} />
+                                                    <Button color="minhaCorNova" onClick={() => setItemActive(idx)} className={(idx === itemActive) ? 'item-menu-active' : 'item-menu'} variant="text">
+                                                        {it.text}
+                                                    </Button>    
                                                 </Link>))
                 }
-                <input className="item-menu" onClick={openGitHub} type="button" value="GitHub"/>
+                <Button color="minhaCorNova" className="item-menu" onClick={openGitHub} variant="text">
+                    GitHub
+                </Button> 
             </Grid>
         </Grid>
     );

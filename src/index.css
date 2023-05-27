@@ -22,7 +22,6 @@ pre{
 }
 
 .submenu{
-  
   top: 2;
   right: 10%; 
   width: 50%;
@@ -30,24 +29,6 @@ pre{
 
 button{
   margin: 0 15px;
-}
-
-.item-menu-active{
-  background: #0F0F10;
-  color: rgb(77, 75, 75);
-  border: 5px;
-  border-color: #0F0F10;
-}
-
-.item-menu{
-  background-color: #0F0F10;
-  border-color: #0F0F10;
-  border: 5px;
-  color: #ffffff;
-}
-
-.item-menu:hover {
-  color: rgba(77, 75, 75);
 }
 
 .item-footer{
